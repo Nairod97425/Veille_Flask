@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Quel est ton âge ?</h2>
+    <form method="POST" action="/age">
+        <input type="number" name="age" placeholder="Ton âge" required>
+        <button type="submit">Valider</button>
+    </form>
+    <!-- {% if error is defined %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %} -->
+    {% if age is defined %}
+        <p>Tu as {{ age }} ans.</p>
+    {% endif %}
+{% endblock %}

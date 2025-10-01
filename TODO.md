@@ -1,0 +1,2 @@
+- [x] Modifier la route /join dans app.py pour rendre 'join.html' au lieu de 'sqlite.html' sur GET
+- [ ] Tester l'application en la lançant
